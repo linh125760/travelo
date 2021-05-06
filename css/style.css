@@ -23,6 +23,7 @@ body {
 :root {
     --font-main: 'Shadows Into Light', cursive;
     --font-special: special;
+    --red-color: #FF4A52;
 }
 
 ul, li {
@@ -121,7 +122,7 @@ nav {
 
 .slide__item a:hover {
     text-decoration: none;
-    background-color: #FF4A52;
+    background-color: var(--red-color);
     color: white;
 }
 
@@ -219,18 +220,18 @@ input, select {
 
 .thumb:hover, .thumb:hover .popular__detail {
     transform: translateY(-5%);
-    color: #FF4A52;
+    color: var(--red-color)
 }
 
 .thumb:hover .places {
-    background-color: #FF4A52;
+    background-color: var(--red-color);
     color: white !important;
 }
 
 /* Subcribe */
 
 .subscribe {
-    background-image: url("/image/newsletter.png");
+    background-image: url("../image/newsletter.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -303,13 +304,13 @@ input, select {
     box-shadow: 4px 0px 14px 0px rgba(0, 0, 0, 0.14);
 }
 
-.places__items:hover h4 {
-    color: #FF4A52;
+.places__items:hover h4, .recent-trips .pd-15:hover h3 {
+    color: var(--red-color);
 }
 
 .more-btn {
     padding: 12px 40px !important;
-    background-color: #FF4A52 !important;
+    background-color: var(--red-color) !important;
     font-weight: 500 !important;
 }
 
@@ -320,7 +321,7 @@ input, select {
     background-position: center center;
     background-size: cover;
     padding: 180px 0;
-    background-image: url("/image/video.png");
+    background-image: url("../image/video.png");
     text-align: center;
 }
 
@@ -411,7 +412,7 @@ input, select {
     width: 10px !important;
     height: 10px !important;
     border-radius: 50% !important;
-    background-color: red !important;
+    background-color: var(--red-color) !important;
 }
 
 /* Recent Trips */
