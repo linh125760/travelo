@@ -5,6 +5,10 @@
     transition: .5s;
 }
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 @font-face {
     font-family: special;
     src: url("../font/Satisfy-Regular.ttf");
@@ -48,8 +52,8 @@ p {
     border-radius: 15px !important;
 }
 
-.mt-30 {
-    margin-top: 30px;
+input:focus, select:focus, textarea:focus {
+    box-shadow: none !important;
 }
 
 /* NAV */
@@ -151,6 +155,10 @@ input, select {
 
 ::placeholder {
     color: rgb(172, 172, 172) !important;
+}
+
+.btn {
+    color: white !important;
 }
 
 .btn-search {
@@ -271,7 +279,7 @@ input, select {
 
 .subscribe .btn {
     width: 100%;
-    height: 100%;
+    height: 50px;
     font-weight: 500;
 }
 
@@ -385,13 +393,13 @@ input, select {
 /* Travel */
 
 .travel {
-    padding: 80px 0;
+    padding: 10vh 0;
     text-align: center;
     background-color: #fff;
 }
 
 .travel__info {
-    padding: 30px;
+    padding: 2vh;
 }
 
 .travel__info h3 {
@@ -404,7 +412,7 @@ input, select {
 }
 
 .review {
-    padding: 100px 0;
+    padding: 10vh 0;
 }
 
 .slide__content {
@@ -429,6 +437,7 @@ input, select {
 .recent-trips .pd-15 h3 {
     font-size: calc(1rem + 0.45vw);
     font-weight: 400;
+    cursor: pointer;
 }
 
 .recent-trips .pd-15 p {
@@ -441,6 +450,7 @@ input, select {
 }
 
 /* Form Contact */
+
 .contact__form {
     padding: 100px 0 50px 0;
 }
@@ -449,6 +459,12 @@ input, select {
     margin-right: 20px;
     font-size: 30px;
 }
+
+.contact__form input, textarea {
+    border-color: #e2e3e3 !important;
+    background: none !important;
+}
+
 /* Footer */
 
 footer {
@@ -491,7 +507,7 @@ footer {
 
 footer h3 {
     font-size: calc(1rem + 0.3vw);
-    margin-bottom: 50px;
+    margin-bottom: 4vh;
     font-size: 400;
     color: white;
 }
@@ -501,9 +517,12 @@ footer h3 {
     font-size: calc(0.8rem + 0.1vw);
 }
 
-
 @media screen and (max-width: 768px) {
     #slide__main .carousel-item img {
         height: 50vh;
+    }
+
+    .ipm {
+        margin: 0 20px !important;
     }
 }
